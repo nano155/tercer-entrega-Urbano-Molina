@@ -461,6 +461,10 @@
   display: flex;
   text-align: center;
   align-items: center;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.3rem;
+  padding: 8px;
+  line-height: 2rem;
 }
 
 .imagen-card-2 {
@@ -477,6 +481,10 @@
   display: flex;
   text-align: center;
   align-items: center;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.3rem;
+  padding: 8px;
+  line-height: 2rem;
 }
 
 .imagen-card-3 {
@@ -493,6 +501,10 @@
   display: flex;
   text-align: center;
   align-items: center;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.3rem;
+  padding: 8px;
+  line-height: 2rem;
 }
 
 @media screen and (max-width: 951px) {

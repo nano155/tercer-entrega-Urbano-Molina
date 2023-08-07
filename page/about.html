@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>Acerca De Nosotros</title>
+    <meta name="description" content="Todo lo que debes saber acerca de nosotros" />
+    <meta name="keywords" content="Restaurante, Carnes, Steak" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
@@ -83,21 +86,24 @@
       </section>
       <section class="about-us">
         <div class="grid-about">
-            <article class="imagen-card-1">
-            </article>
-            <article class="textos-about-1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa vitae hic omnis dolores eligendi corporis enim incidunt, qui magnam!.</p>
-            </article>
-            <article class="textos-about-2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa vitae hic omnis dolores eligendi corporis enim incidunt, qui magnam!</p>
-            </article>
-            <article class="imagen-card-2">
-            </article>
-            <article class="imagen-card-3">
-            </article>
-            <article class="textos-about-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa vitae hic omnis dolores eligendi corporis enim incidunt, qui magnam!</p>
-            </article>
+          <article data-aos="fade-up-right" class="imagen-card-1"></article>
+          <article data-aos="zoom-in" class="textos-about-1">
+            <p>
+              En San Bife Steak House, nos enorgullece llevar a tu mesa una experiencia gastronómica única y auténtica. Somos mucho más que un restaurante de carnes; somos el resultado de años de pasión por la parrilla y el deseo de ofrecer a nuestros comensales los cortes más jugosos y sabrosos que puedas encontrar.
+            </p>
+          </article>
+          <article data-aos="zoom-in" class="textos-about-2">
+            <p>
+              Nuestra historia comenzó en los rincones más emblemáticos de la tradición parrillera, donde cada corte es tratado con respeto y cuidado desde su selección hasta su presentación en tu plato. Nuestros expertos parrilleros dominan el arte de asar a la perfección, combinando técnicas ancestrales con toques contemporáneos para ofrecer un sabor inigualable en cada bocado.
+            </p>
+          </article>
+          <article data-aos="fade-up-left" class="imagen-card-2"></article>
+          <article data-aos="fade-up-right" class="imagen-card-3"></article>
+          <article data-aos="zoom-in" class="textos-about-3">
+            <p>
+              Nos esforzamos por mantener una relación cercana con los productores locales y seleccionamos solo las mejores piezas de carne, garantizando su frescura y calidad. Nuestra filosofía se basa en el respeto por los ingredientes y en la creación de platos que rindan homenaje a la riqueza culinaria de nuestra región.
+            </p>
+          </article>
         </div>
       </section>
     </main>
@@ -171,5 +177,9 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
