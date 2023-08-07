@@ -1,0 +1,34 @@
+#footer {
+    background-image: url("../img/fondo_footer.jpg");
+    background-size: contain;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    .container-dias {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        color: #e2962b;
+    }
+    .footer-social ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 0;
+        #social-item {
+            width: 100px;
+            color: #ffffff;
+            svg:hover {
+                color: #e2962b;
+            }
+        }
+    }
+    .cierre {
+        width: 100%;
+        background-color: black;
+        text-align: center;
+    }
+}

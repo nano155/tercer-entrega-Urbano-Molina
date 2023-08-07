@@ -1,0 +1,29 @@
+.nav-s {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        padding: 0;
+        li{
+            #logo-nav {
+                width: 100px;
+            }
+            #social-item {
+                width: 100px;
+                color: #ffffff;
+                svg:hover {
+                    color: #e2962b;
+                }
+            }
+        }
+    }    
+}

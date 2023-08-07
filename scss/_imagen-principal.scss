@@ -1,0 +1,118 @@
+@import "./variables";
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 120vh;
+  .img-f1 {
+    background-image: url("../img/tomahawk.png");
+  }
+  .img-f2 {
+    background-image: url("../img/SB-38.png");
+  }
+  .img-f3 {
+    background-image: url("../img/comidas.png");
+  }
+  .img-f4 {
+    background-image: url("../img/bebidas.png");
+  }
+}
+.container-fondo {
+  display: flex;
+  justify-content: center;
+  height: 120vh;
+  .img-fondo {
+    width: 100%;
+    background-image: url("../img/imagen-about.jpg");
+    background-size: cover;
+    background-position: center center;
+    .texto {
+      margin: 50%;
+      margin-top: 30rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #ffffff;
+      text-align: center;
+      h2 {
+        font-family: "Caveat", cursive;
+        padding-bottom: 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        border: 2px solid white;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+@for $numero from 1 through 4 {
+  .img-f#{$numero} {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: all .3s;
+    &:hover{
+        transform: scale(1.03);
+    }
+    .texto {
+      margin: 50%;
+      margin-top: 30rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $colorLetras;
+      h2 {
+        font-family: $fuenteEspecial;
+        padding-bottom: 1rem;
+      }
+      a {
+        text-decoration: none;
+        text-align: center;
+        font-family: inherit;
+        display: inline-block;
+        width: 8em;
+        height: 2.6em;
+        line-height: 2.5em;
+        margin: 20px;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid $colorLetras;
+        transition: color 0.5s;
+        z-index: 1;
+        font-size: 17px;
+        border-radius: 6px;
+        font-weight: 500;
+        color: $colorLetras;
+        &:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          background: $colorHover;
+          height: 150px;
+          width: 200px;
+          border-radius: 50%;
+        }
+        &:hover {
+          color: $colorLetras;
+        &:before {
+            top: -30px;
+            left: -30px;
+          }
+        }
+        &:before {
+            top: 100%;
+            left: 100%;
+            transition: all 0.7s;
+          }
+        &:active:before {
+            background: #db8a19;
+            transition: background 0s;
+          }
+      }
+    }
+  }
+}

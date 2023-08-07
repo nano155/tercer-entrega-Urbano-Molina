@@ -1,0 +1,118 @@
+@import "./nav";
+@import "./imagen-principal";
+@import "./reset";
+@import "./variables";
+@import "./footer";
+@import "./carta";
+
+@media screen and (max-width: 951px) {
+  body {
+    font-size: 14px;
+    #carta {
+      display: flex;
+      flex-direction: column;
+      align-items: center !important;
+      .opciones {
+        ul {
+          visibility: collapse;
+        }
+      }
+      .dropdown {
+        visibility: visible !important;
+      }
+      .grid-carta {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        column-gap: 30px;
+        row-gap: 25px;
+      }
+    }
+  }
+  .img-f1 {
+    width: 50%;
+    background-image: url("../img/tomahawk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img-f2 {
+    width: 50%;
+    background-image: url("../img/SB-38.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .about-us{
+    .grid-about{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      grid-template-areas: 
+      "textos-about-1"
+      "imagen-card-1"
+      "textos-about-2"
+      "imagen-card-2"
+      "textos-about-3"
+      "imagen-card-3"
+      ;
+      @for $numero from 1 through 3{
+        .imagen-card-#{$numero}{
+            width: 100%;
+            height: 300px;
+            background-size: cover; 
+            background-position: center center;
+            grid-area: imagen-card-#{$numero};
+        }
+        .textos-about-#{$numero}{
+            width: 100%;
+            height: 300px;
+            color: #ffffff;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            grid-area: textos-about-#{$numero};
+        }
+    }
+    }
+  }
+    
+  }
+
+@media screen and (max-width: 700px) {
+  #carta {
+    font-size: 10px;
+  }
+
+  #logo-nav {
+    width: 80px;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .plato {
+    width: 18rem;
+    color: #ffffff;
+    border: 2px solid white;
+    padding: 0.5rem;
+  }
+  @for $numero from 1 through 4 {
+    .img-f#{$numero} {
+      width: 100%;
+      height: 50%;
+      background-size: cover;
+      .texto {
+        margin: 50%;
+        margin-top: 9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+      }
+    }
+  }
+}
