@@ -3,6 +3,7 @@
     background-size: contain;
     background-position: center center;
     padding: 3rem;
+    padding-inline: 8rem;
     .opciones{
         ul{
             list-style: none;
@@ -10,6 +11,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             row-gap: 50px;
+            padding: 0;
             justify-content: space-between;
             li{
                 a{
@@ -27,9 +29,9 @@
     .grid-carta{
         margin-top: 50px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        column-gap: 30px;
+        grid-template-columns: auto auto;
+        align-content: space-around;
+        justify-content: space-between ;
         row-gap: 25px;
         .plato{
             width: 26rem;

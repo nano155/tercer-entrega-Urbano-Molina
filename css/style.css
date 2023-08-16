@@ -1,14 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Nanum+Gothic:wght@700&family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Nanum+Gothic:wght@700&family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .nav-s {
+  background: rgba(43, 43, 43, 0.3);
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 8px;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
 }
 .nav-s ul {
@@ -16,6 +23,7 @@
   list-style: none;
   gap: 1rem;
   padding: 0;
+  margin: 0;
 }
 .nav-s ul li #logo-nav {
   width: 100px;
@@ -27,24 +35,106 @@
 .nav-s ul li #social-item svg:hover {
   color: #e2962b;
 }
+.nav-s ul li .navegadores {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Nanum Gothic", sans-serif;
+  color: #ffffff;
+}
+.nav-s ul li .navegadores:hover {
+  color: #e2962b;
+}
+.nav-s button {
+  display: none;
+}
 
-.img-container {
+main {
+  display: flex;
+  flex-direction: column;
+}
+main .img-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 120vh;
 }
-.img-container .img-f1 {
+main .img-container .img-f1 {
   background-image: url("../img/tomahawk.png");
 }
-.img-container .img-f2 {
+main .img-container .img-f2 {
   background-image: url("../img/SB-38.png");
 }
-.img-container .img-f3 {
+main .img-container .img-f3 {
   background-image: url("../img/comidas.png");
 }
-.img-container .img-f4 {
+main .img-container .img-f4 {
   background-image: url("../img/bebidas.png");
+}
+main .container-conocenos {
+  background-image: url("../img/fondo-contacto.jpg");
+  z-index: 1;
+  padding: 35px;
+}
+main .container-conocenos .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .container-conocenos .container h2 {
+  font-family: "Caveat", cursive;
+  padding-bottom: 1rem;
+  font-size: 30px;
+}
+main .container-conocenos .container p {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
+}
+main .container-conocenos .container button {
+  background-color: transparent;
+  text-align: center;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid black;
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: black;
+}
+main .container-conocenos .container button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #e2962b;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+main .container-conocenos .container button:hover {
+  color: #ffffff;
+}
+main .container-conocenos .container button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+main .container-conocenos .container button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+main .container-conocenos .container button:active:before {
+  background: #db8a19;
+  transition: background 0s;
+}
+main .container-conocenos .container button a {
+  text-decoration: none;
+  color: black;
 }
 
 .container-fondo {
@@ -83,7 +173,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 .img-f1:hover {
   transform: scale(1.03);
@@ -150,7 +240,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 .img-f2:hover {
   transform: scale(1.03);
@@ -217,7 +307,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 .img-f3:hover {
   transform: scale(1.03);
@@ -284,7 +374,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 .img-f4:hover {
   transform: scale(1.03);
@@ -346,12 +436,6 @@
   transition: background 0s;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 #footer {
   background-image: url("../img/fondo_footer.jpg");
   background-size: contain;
@@ -392,6 +476,7 @@
   background-size: contain;
   background-position: center center;
   padding: 3rem;
+  padding-inline: 8rem;
 }
 #carta .opciones ul {
   list-style: none;
@@ -399,6 +484,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   row-gap: 50px;
+  padding: 0;
   justify-content: space-between;
 }
 #carta .opciones ul li a {
@@ -413,9 +499,9 @@
 #carta .grid-carta {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  column-gap: 30px;
+  grid-template-columns: auto auto;
+  align-content: space-around;
+  justify-content: space-between;
   row-gap: 25px;
 }
 #carta .grid-carta .plato {
@@ -507,7 +593,7 @@
   line-height: 2rem;
 }
 
-@media screen and (max-width: 951px) {
+@media screen and (max-width: 1092px) {
   body {
     font-size: 14px;
   }
@@ -599,6 +685,21 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .nav-s {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-s #social-item {
+    display: none;
+  }
+  .nav-s .navegador {
+    display: none;
+  }
+  .nav-s #burguer {
+    display: block;
+    position: absolute;
+    right: 10px;
+  }
   #carta {
     font-size: 10px;
   }
@@ -667,6 +768,47 @@
     flex-direction: column;
     align-items: center;
     color: #ffffff;
+  }
+  .body {
+    background-color: black;
+  }
+  .body header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 17rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
+    z-index: 3;
+  }
+  .body header .nav-s {
+    background: rgba(43, 43, 43, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    z-index: 4;
+  }
+  .body header .nav-s .navegador {
+    background: rgba(43, 43, 43, 0.5);
+    position: absolute;
+    height: 10rem;
+    top: 116px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .body header .nav-s #burguer {
+    display: none;
+  }
+  .body header .nav-s #close {
+    display: block;
+    position: absolute;
+    right: 10px;
   }
 }
 
