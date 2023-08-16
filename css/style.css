@@ -174,9 +174,10 @@ main .container-conocenos .container button a {
   background-position: center center;
   background-size: cover;
   transition: all 0.1s;
+  transform: scale(1);
 }
 .img-f1:hover {
-  transform: scale(1.03);
+  transform: scale(1.2);
 }
 .img-f1 .texto {
   margin: 50%;
@@ -241,9 +242,10 @@ main .container-conocenos .container button a {
   background-position: center center;
   background-size: cover;
   transition: all 0.1s;
+  transform: scale(1);
 }
 .img-f2:hover {
-  transform: scale(1.03);
+  transform: scale(1.2);
 }
 .img-f2 .texto {
   margin: 50%;
@@ -308,9 +310,10 @@ main .container-conocenos .container button a {
   background-position: center center;
   background-size: cover;
   transition: all 0.1s;
+  transform: scale(1);
 }
 .img-f3:hover {
-  transform: scale(1.03);
+  transform: scale(1.2);
 }
 .img-f3 .texto {
   margin: 50%;
@@ -375,9 +378,10 @@ main .container-conocenos .container button a {
   background-position: center center;
   background-size: cover;
   transition: all 0.1s;
+  transform: scale(1);
 }
 .img-f4:hover {
-  transform: scale(1.03);
+  transform: scale(1.2);
 }
 .img-f4 .texto {
   margin: 50%;
@@ -637,14 +641,14 @@ main .container-conocenos .container button a {
   }
   .about-us .grid-about .imagen-card-1 {
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-size: cover;
     background-position: center center;
     grid-area: imagen-card-1;
   }
   .about-us .grid-about .textos-about-1 {
     width: 100%;
-    height: 300px;
+    height: 350px;
     color: #ffffff;
     display: flex;
     text-align: center;
@@ -653,14 +657,14 @@ main .container-conocenos .container button a {
   }
   .about-us .grid-about .imagen-card-2 {
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-size: cover;
     background-position: center center;
     grid-area: imagen-card-2;
   }
   .about-us .grid-about .textos-about-2 {
     width: 100%;
-    height: 300px;
+    height: 350px;
     color: #ffffff;
     display: flex;
     text-align: center;
@@ -669,14 +673,14 @@ main .container-conocenos .container button a {
   }
   .about-us .grid-about .imagen-card-3 {
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-size: cover;
     background-position: center center;
     grid-area: imagen-card-3;
   }
   .about-us .grid-about .textos-about-3 {
     width: 100%;
-    height: 300px;
+    height: 350px;
     color: #ffffff;
     display: flex;
     text-align: center;
